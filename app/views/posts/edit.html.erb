@@ -1,0 +1,9 @@
+<div class="content__title">
+  投稿の編集
+</div>
+
+<%=form_with model: @post, class:"form", local: true do |post|%>
+  <%=post.text_field :title, placeholder:"タイトル",class:"form__title"%>
+  <%=post.text_field :body, placeholder:"本文", class:"form__text"%>
+  <%=post.submit '投稿する',class:"form__btn"%>
+<%end%>
