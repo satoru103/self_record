@@ -1,8 +1,10 @@
-<% @post.each do |post| %>
+<div class="postTitle">
+  <%= @user.email %>さんの投稿一覧
+</div>
+<% @posts.each do |post| %>
   <div class="content">
     <div class="content__left">
       <div class="content__left--image"></div>
-        
     </div>
     <div class="content__right">
       <div class="content__right__top">
